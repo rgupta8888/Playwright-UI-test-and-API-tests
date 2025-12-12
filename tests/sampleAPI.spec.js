@@ -1,6 +1,6 @@
 const { test, expect } = require("@playwright/test");
 
-test.describe("Sample Regression API tests @reg", () => {
+test.describe.serial("Sample Regression API tests @reg", () => {
 
     let userId;
 

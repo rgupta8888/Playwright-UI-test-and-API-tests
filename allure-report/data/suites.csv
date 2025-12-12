@@ -1,0 +1,5 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","483","Post api request @post","chromium","Fri Dec 12 18:59:47 IST 2025","passed","Fri Dec 12 18:59:48 IST 2025","Sample Regression API tests @reg","sampleAPI.spec.js","",""
+"","407","Delete api request @delete","chromium","Fri Dec 12 18:59:48 IST 2025","passed","Fri Dec 12 18:59:49 IST 2025","Sample Regression API tests @reg","sampleAPI.spec.js","",""
+"","801","Get api request @get","chromium","Fri Dec 12 18:59:46 IST 2025","passed","Fri Dec 12 18:59:47 IST 2025","Sample Regression API tests @reg","sampleAPI.spec.js","",""
+"","480","Put api request @put","chromium","Fri Dec 12 18:59:48 IST 2025","passed","Fri Dec 12 18:59:48 IST 2025","Sample Regression API tests @reg","sampleAPI.spec.js","",""

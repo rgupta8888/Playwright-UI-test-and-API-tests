@@ -1,0 +1,3 @@
+{
+  message: 'Object with id = ff8081819782e69e019b12be035b5dc3 has been deleted.'
+}
