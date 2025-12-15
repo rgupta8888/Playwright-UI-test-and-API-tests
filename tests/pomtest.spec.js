@@ -3,29 +3,33 @@ import { LoginPage } from '../Pages/LoginPage';
 import { HomePage } from '../Pages/HomePage';
 import { CartPage } from '../Pages/CartPage';
 import { beforeEach, describe } from 'node:test';
+import { getEnvData } from '../utils/envUtil.js';
 
 
 
 
 test.describe.serial('POM Test Suite', () => {
 
-   test.beforeEach(async ({ page }) => {
+
+    const data = getEnvData();
+
+    test.beforeEach(async ({ page }) => {
         const loginPage = new LoginPage(page);
-        await loginPage.gotoLoginPage("https://www.demoblaze.com/index.html");
-        await loginPage.login('rahul01', 'test@123');
+        await loginPage.gotoLoginPage(data.loginUrl);
+        await loginPage.login(data.username, data.password);
         await page.waitForTimeout(5000);
         const homePage = new HomePage(page);
         await homePage.goToCart();
         const cartPage = new CartPage(page);
         await page.waitForSelector("#tbodyid tr");
         await cartPage.emptyCart();
-        await homePage.logout();   
+        await homePage.logout();
     });
 
     test.only('POM Test Demo @smoke', async ({ page }) => {
         const loginPage = new LoginPage(page);
-        await loginPage.gotoLoginPage("https://www.demoblaze.com/index.html");
-        await loginPage.login('rahul01', 'test@123');
+        await loginPage.gotoLoginPage(data.loginUrl);
+        await loginPage.login(data.username, data.password);
 
         await page.waitForTimeout(5000);
         expect.soft(page.locator("//a[@id='nameofuser']")).toHaveText("Welcome rahul01");

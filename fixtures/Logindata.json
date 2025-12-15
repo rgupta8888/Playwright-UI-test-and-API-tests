@@ -1,0 +1,17 @@
+{
+  "qa": {
+    "loginUrl": "https://www.demoblaze.com/index.html",
+    "username": "rahul01",
+    "password": "test@123"
+  },
+  "staging": {
+    "loginUrl": "https://staging.example.com/login",
+    "username": "stg_user",
+    "password": "stg_pass"
+  },
+  "prod": {
+    "loginUrl": "https://example.com/login",
+    "username": "prod_user",
+    "password": "prod_pass"
+  }
+}
