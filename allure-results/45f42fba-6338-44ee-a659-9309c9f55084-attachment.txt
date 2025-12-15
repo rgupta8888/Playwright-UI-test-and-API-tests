@@ -1,0 +1,4 @@
+Total products of products in the cart: 5
+Checking product: Delete
+Checking product: Delete
+Checking product: Delete

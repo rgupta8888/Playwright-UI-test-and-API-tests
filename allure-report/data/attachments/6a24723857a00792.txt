@@ -1,0 +1,2 @@
+Text in new window: This is a sample page
+Number of tabs: 2

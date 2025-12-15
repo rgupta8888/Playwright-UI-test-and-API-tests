@@ -5,6 +5,7 @@ class HomePage {
         this.productList = page.locator("(//div[@class='card-block'])/h4/a");
         this.addToCartButton = page.locator("//a[@class='btn btn-success btn-lg']");
         this.cartLink = page.locator("//a[@id='cartur']");
+        this.logOut = page.locator("//a[@id='logout2']");
     }
 
     async addProductToCart(productName) {
@@ -32,5 +33,9 @@ class HomePage {
 
     async goToCart() {
         await this.cartLink.click();
+    }
+
+    async logout() {
+        await this.logOut.click();
     }
 }

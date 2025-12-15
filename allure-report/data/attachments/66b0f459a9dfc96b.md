@@ -1,0 +1,104 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - text:             X 
+  - navigation [ref=e2]:
+    - generic [ref=e3]:
+      - link "PRODUCT STORE" [ref=e4] [cursor=pointer]:
+        - /url: index.html
+        - img [ref=e5]
+        - text: PRODUCT STORE
+      - list [ref=e7]:
+        - listitem [ref=e8]:
+          - link "Home (current)" [ref=e9] [cursor=pointer]:
+            - /url: index.html
+            - text: Home
+            - generic [ref=e10]: (current)
+        - listitem [ref=e11]:
+          - link "Contact" [ref=e12] [cursor=pointer]:
+            - /url: "#"
+        - listitem [ref=e13]:
+          - link "About us" [ref=e14] [cursor=pointer]:
+            - /url: "#"
+        - listitem [ref=e15]:
+          - link "Cart" [ref=e16] [cursor=pointer]:
+            - /url: "#"
+        - listitem
+        - listitem [ref=e17]:
+          - link "Log out" [ref=e18] [cursor=pointer]:
+            - /url: "#"
+        - listitem [ref=e19]:
+          - link "Welcome rahul01" [ref=e20] [cursor=pointer]:
+            - /url: "#"
+        - listitem
+  - generic [ref=e22]:
+    - generic [ref=e23]:
+      - heading "Products" [level=2] [ref=e24]
+      - table [ref=e26]:
+        - rowgroup [ref=e27]:
+          - row "Pic Title Price x" [ref=e28]:
+            - cell "Pic" [ref=e29]
+            - cell "Title" [ref=e30]
+            - cell "Price" [ref=e31]
+            - cell "x" [ref=e32]
+        - rowgroup [ref=e33]:
+          - row "Samsung galaxy s7 800 Delete" [ref=e34]:
+            - cell [ref=e35]:
+              - img [ref=e36]
+            - cell "Samsung galaxy s7" [ref=e37]
+            - cell "800" [ref=e38]
+            - cell "Delete" [ref=e39]:
+              - link "Delete" [ref=e40] [cursor=pointer]:
+                - /url: "#"
+          - row "Sony vaio i5 790 Delete" [ref=e41]:
+            - cell [ref=e42]:
+              - img [ref=e43]
+            - cell "Sony vaio i5" [ref=e44]
+            - cell "790" [ref=e45]
+            - cell "Delete" [ref=e46]:
+              - link "Delete" [ref=e47] [cursor=pointer]:
+                - /url: "#"
+          - row "Nexus 6 650 Delete" [ref=e48]:
+            - cell [ref=e49]:
+              - img [ref=e50]
+            - cell "Nexus 6" [ref=e51]
+            - cell "650" [ref=e52]
+            - cell "Delete" [ref=e53]:
+              - link "Delete" [ref=e54] [cursor=pointer]:
+                - /url: "#"
+          - row "Nokia lumia 1520 820 Delete" [ref=e55]:
+            - cell [ref=e56]:
+              - img [ref=e57]
+            - cell "Nokia lumia 1520" [ref=e58]
+            - cell "820" [ref=e59]
+            - cell "Delete" [ref=e60]:
+              - link "Delete" [ref=e61] [cursor=pointer]:
+                - /url: "#"
+          - row "Samsung galaxy s6 360 Delete" [ref=e62]:
+            - cell [ref=e63]:
+              - img [ref=e64]
+            - cell "Samsung galaxy s6" [ref=e65]
+            - cell "360" [ref=e66]
+            - cell "Delete" [ref=e67]:
+              - link "Delete" [ref=e68] [cursor=pointer]:
+                - /url: "#"
+    - generic [ref=e69]:
+      - heading "Total" [level=2] [ref=e70]
+      - heading "3420" [level=3] [ref=e73]
+      - button "Place Order" [ref=e74]
+  - generic [ref=e76]:
+    - generic [ref=e79]:
+      - heading "About Us" [level=4] [ref=e80]
+      - paragraph [ref=e81]: We believe performance needs to be validated at every stage of the software development cycle and our open source compatible, massively scalable platform makes that a reality.
+    - generic [ref=e84]:
+      - heading "Get in Touch" [level=4] [ref=e85]
+      - paragraph [ref=e86]: "Address: 2390 El Camino Real"
+      - paragraph [ref=e87]: "Phone: +440 123456"
+      - paragraph [ref=e88]: "Email: demo@blazemeter.com"
+    - heading "PRODUCT STORE" [level=4] [ref=e92]:
+      - img [ref=e93]
+      - text: PRODUCT STORE
+  - contentinfo [ref=e94]:
+    - paragraph [ref=e95]: Copyright © Product Store
+```

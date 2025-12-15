@@ -2,14 +2,29 @@ import { test, expect } from '@playwright/test';
 import { LoginPage } from '../Pages/LoginPage';
 import { HomePage } from '../Pages/HomePage';
 import { CartPage } from '../Pages/CartPage';
-import { describe } from 'node:test';
+import { beforeEach, describe } from 'node:test';
+
+
 
 
 test.describe.serial('POM Test Suite', () => {
 
-    test('POM Test Demo @smoke', async ({ page }) => {
+   test.beforeEach(async ({ page }) => {
         const loginPage = new LoginPage(page);
-        await loginPage.gotoLoginPage();
+        await loginPage.gotoLoginPage("https://www.demoblaze.com/index.html");
+        await loginPage.login('rahul01', 'test@123');
+        await page.waitForTimeout(5000);
+        const homePage = new HomePage(page);
+        await homePage.goToCart();
+        const cartPage = new CartPage(page);
+        await page.waitForSelector("#tbodyid tr");
+        await cartPage.emptyCart();
+        await homePage.logout();   
+    });
+
+    test.only('POM Test Demo @smoke', async ({ page }) => {
+        const loginPage = new LoginPage(page);
+        await loginPage.gotoLoginPage("https://www.demoblaze.com/index.html");
         await loginPage.login('rahul01', 'test@123');
 
         await page.waitForTimeout(5000);
@@ -41,9 +56,9 @@ test.describe.serial('POM Test Suite', () => {
     })
 
     test.slow('POM Test Demo @regression @slow', async ({ page }) => {
-        
+
         // increasing deafault 30000 to 3 times of that
-        
+
         await page.goto('https://demo.nopcommerce.com/');
         await page.waitForTimeout(40000);
         console.log("This is regression test slow test");

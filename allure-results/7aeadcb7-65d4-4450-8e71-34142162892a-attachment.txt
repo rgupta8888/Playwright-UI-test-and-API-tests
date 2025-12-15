@@ -1,0 +1,5 @@
+Total products: 9
+Product added.
+Total products in cart: 4
+Checking product: HTC One M9
+Checking product: Sony vaio i5
