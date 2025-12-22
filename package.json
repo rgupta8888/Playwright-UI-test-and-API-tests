@@ -5,7 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "playwright test",
-    "test:headed": "playwright test --headed"
+    "test:headed": "playwright test --headed",
+    "test:smoke": "npx playwright test --grep @smoke",
+    "test:reg": "npx playwright test --grep @regression",
+    "test:api": "npx playwright test tests/api"
   },
   "keywords": [],
   "author": "",

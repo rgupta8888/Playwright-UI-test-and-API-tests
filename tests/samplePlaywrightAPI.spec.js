@@ -55,14 +55,14 @@ test.describe.serial("Sample Regression API tests @reg", () => {
             }
         });
 
-        //console.log(await response.json());
+        console.log(await response.json());
         expect(response.status()).toBe(200);
     });
 
     test("Delete api request @delete", async ({ request }) => {
 
         const response = await request.delete(`https://api.restful-api.dev/objects/${userId}`);
-        //console.log(await response.json());
+        console.log(await response.json());
         expect(response.status()).toBe(200);
     });
 
