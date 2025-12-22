@@ -1,0 +1,15 @@
+[
+  { bookingid: 3802 },
+  { bookingid: 3762 },
+  { bookingid: 4149 },
+  { bookingid: 2331 }
+]
+{ token: '64a6aac22ba9f68' }
+{
+  firstname: 'testers talk specflow',
+  lastname: 'testers talk easyrepro',
+  totalprice: 1000,
+  depositpaid: true,
+  bookingdates: { checkin: '2018-01-01', checkout: '2019-01-01' },
+  additionalneeds: 'orange'
+}
