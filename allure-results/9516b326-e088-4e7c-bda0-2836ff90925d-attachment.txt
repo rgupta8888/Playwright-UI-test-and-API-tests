@@ -1,0 +1,11 @@
+{
+  bookingid: 918,
+  booking: {
+    firstname: 'Rossie',
+    lastname: 'Blick',
+    totalprice: 365,
+    depositpaid: true,
+    bookingdates: { checkin: '2025-12-22', checkout: '2025-12-27' },
+    additionalneeds: 'super bowls'
+  }
+}

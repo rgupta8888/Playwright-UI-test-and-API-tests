@@ -1,0 +1,11 @@
+{
+  bookingid: 2828,
+  booking: {
+    firstname: 'Destiny',
+    lastname: 'Wiza',
+    totalprice: 850,
+    depositpaid: true,
+    bookingdates: { checkin: '2025-12-22', checkout: '2025-12-27' },
+    additionalneeds: 'super bowls'
+  }
+}
